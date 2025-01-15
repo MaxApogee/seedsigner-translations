@@ -83,15 +83,15 @@ msgstr "Revisar Detalles"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "1 input"
-msgstr "1 Entrada"
+msgstr "1 entrada"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "input 1"
-msgstr "Entrada 1"
+msgstr "entrada 1"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "input 2"
-msgstr "Entrada 2"
+msgstr "entrada 2"
 
 #. Indicates that items have been omitted from a series: e.g. "1, 2, 3, [...],
 #. 8"
@@ -102,7 +102,7 @@ msgstr "[ ... ]"
 #. Input number will be inserted (e.g. "input 3")
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "input {}"
-msgstr "Entrada {}"
+msgstr "entrada {}"
 
 #. Ellipsis ("...") characters used to truncate an address (e.g. "bc1qabc...")
 #: src/seedsigner/gui/screens/psbt_screens.py
@@ -116,12 +116,12 @@ msgstr "autotransferencia"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "recipient 1"
-msgstr "Destinatario 1"
+msgstr "destinatario 1"
 
 #. Inserts the recipient number (e.g. the fifth one is: "recipient 5")
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "recipient {}"
-msgstr "Destinatario {}"
+msgstr "destinatario {}"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "fee"
@@ -188,7 +188,7 @@ msgstr "¡Dirección verificada!"
 #. Shown when displaying OP_RETURN as non-human-readable hexadecimal data
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "raw hex data"
-msgstr "datos hexadecimales sin procesar"
+msgstr "datos hexadecimales"
 
 #: src/seedsigner/gui/screens/psbt_screens.py
 msgid "Sign PSBT"
@@ -560,7 +560,7 @@ msgstr "Tirar Dado {}/{}"
 #. Build the last word in a 12 or 24 word BIP-39 mnemonic seed phrase.
 #: src/seedsigner/gui/screens/tools_screens.py
 msgid "Build Final Word"
-msgstr "Generar la Palabra Final"
+msgstr "Última Palabra"
 
 #. Final word calc. `mnemonic_length` = 12 or 24. `num_bits` = 7 or 3 (bits of
 #. entropy in final word).
@@ -859,7 +859,7 @@ msgstr "Analizando PSBT..."
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Unsupported Script Type!"
-msgstr "¡Tipo de Script No Soportado!"
+msgstr "¡No Soportado!"
 
 #: src/seedsigner/views/psbt_views.py
 msgid ""
@@ -945,7 +945,7 @@ msgstr "Dirección de PSBT {} no se puede generar desde esta frase semilla."
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Address Verification Failed"
-msgstr "Fallo Verificación de Dirección"
+msgstr "Fallo Verificación"
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Discard PSBT"
@@ -1077,7 +1077,7 @@ msgstr "Cargar una Semilla"
 #. Inserts the word number (e.g. "Seed Word #6")
 #: src/seedsigner/views/seed_views.py
 msgid "Seed Word #{}"
-msgstr "Palabra Número #{}"
+msgstr "Palabra Número {}"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Review & Edit"
@@ -1093,7 +1093,7 @@ msgstr "¡Frase Mnemónica Inválida!"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Checksum failure; not a valid seed phrase."
-msgstr "Fallo en la suma de comprobación; la Semilla no es válida."
+msgstr "Fallo en la suma de comprobación; la semilla no es válida."
 
 #: src/seedsigner/views/seed_views.py
 msgid "Edit passphrase"
@@ -1145,7 +1145,7 @@ msgstr "Llave Hijo BIP-85"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Discard Seed"
-msgstr "Descartar semilla"
+msgstr "Descartar Semilla"
 
 #: src/seedsigner/views/seed_views.py
 msgid "View Seed Words"
@@ -1296,7 +1296,7 @@ msgstr "¡Error!"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Your transcribed SeedQR does not match your original seed!"
-msgstr "¡La Transcripción de la SeedQR no coincide con tu Semilla original!"
+msgstr "¡La transcripción de la SeedQR no coincide con tu semilla original!"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Review SeedQR"
@@ -1307,7 +1307,7 @@ msgid ""
 "Your transcribed SeedQR successfully scanned and yielded the same seed."
 msgstr ""
 "¡El escaneo de la transcripción SeedQR fue éxitosa y produjo la misma "
-"Semilla!"
+"semilla!"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Your transcribed SeedQR could not be read!"
@@ -1412,7 +1412,7 @@ msgstr "Entropía Cara o Cruz"
 #. Label to gather entropy through user specified BIP-39 word
 #: src/seedsigner/views/tools_views.py
 msgid "Word selection entropy"
-msgstr "Entropía de palabras"
+msgstr "Entropía con palabras"
 
 #. Label to allow user to default entropy as all-zeros
 #: src/seedsigner/views/tools_views.py
