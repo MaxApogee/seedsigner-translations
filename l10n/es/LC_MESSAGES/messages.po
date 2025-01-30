@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: seedsigner 0.8.5-rc1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-15 10:45-0600\n"
+"POT-Creation-Date: 2025-01-28 13:28-0600\n"
 "PO-Revision-Date: 2022-04-29 13:50+0000\n"
 "Last-Translator: Max Apogee, 2025\n"
 "Language-Team: Spanish (https://app.transifex.com/seedsigner/teams/135832/es/)\n"
@@ -46,16 +46,6 @@ msgstr "btc"
 #: src/seedsigner/models/settings_definition.py
 msgid "sats"
 msgstr "sats"
-
-#. The abbreviated label for the special key <del> on a standard keyboard.
-#: src/seedsigner/gui/keyboard.py
-msgid "del"
-msgstr "borrar"
-
-#. The abbreviated label for the special key <space> on a standard keyboard.
-#: src/seedsigner/gui/keyboard.py
-msgid "space"
-msgstr "espacio"
 
 #: src/seedsigner/gui/toast.py
 msgid ""
@@ -201,7 +191,7 @@ msgstr "Clic para aprobar esta transacción"
 #: src/seedsigner/gui/screens/scan_screens.py
 #: src/seedsigner/gui/screens/tools_screens.py
 msgid "back"
-msgstr "regresar"
+msgstr "volver"
 
 #. Inserts the percentage value of the animated QR scan progress
 #: src/seedsigner/gui/screens/scan_screens.py
@@ -230,7 +220,7 @@ msgstr "¡Éxito!"
 msgid "OK"
 msgstr "OK"
 
-#: src/seedsigner/gui/screens/screen.py src/seedsigner/views/psbt_views.py
+#: src/seedsigner/gui/screens/screen.py
 msgid "Caution"
 msgstr "Precaución"
 
@@ -245,6 +235,11 @@ msgstr "Entendido"
 #: src/seedsigner/gui/screens/screen.py
 msgid "Classified Info!"
 msgstr "¡Información Clasificada!"
+
+#: src/seedsigner/gui/screens/screen.py src/seedsigner/views/scan_views.py
+#: src/seedsigner/views/view.py
+msgid "Error"
+msgstr "Error"
 
 #: src/seedsigner/gui/screens/screen.py
 msgid "Restarting"
@@ -433,7 +428,7 @@ msgstr "Índice {}"
 
 #: src/seedsigner/gui/screens/seed_screens.py
 msgid "Multisig Verification"
-msgstr "Validación de Multifirma"
+msgstr "Verificar Multifirma"
 
 #: src/seedsigner/gui/screens/seed_screens.py
 msgid ""
@@ -539,13 +534,13 @@ msgid "Home"
 msgstr "Menú"
 
 #: src/seedsigner/gui/screens/tools_screens.py
-msgid "click joystick"
-msgstr "haga clic en la palanca"
+msgid "click a button"
+msgstr "Clic para foto"
 
 #. A prompt to the user to either accept or reshoot the image
 #: src/seedsigner/gui/screens/tools_screens.py
 msgid "reshoot"
-msgstr "Volver a tomar"
+msgstr "volver a tomar"
 
 #. A prompt to the user to either accept or reshoot the image
 #: src/seedsigner/gui/screens/tools_screens.py
@@ -928,19 +923,17 @@ msgstr "Verificando Autotransferencia"
 
 #. Variable is either "change" or "self-transfer".
 #: src/seedsigner/views/psbt_views.py
-msgid ""
-"PSBT's {} address could not be verified with your multisig wallet "
-"descriptor."
-msgstr "Dirección de PSBT para su {} no se pudo verificar con su descriptor."
-
-#: src/seedsigner/views/psbt_views.py
-msgid "Suspicious PSBT"
-msgstr "PSBT Sospechoso"
+msgid "PSBT's {} address could not be verified from wallet descriptor."
+msgstr "Dirección de PSBT para {} no se pudo verificar con su descriptor."
 
 #. Variable is either "change" or "self-transfer".
 #: src/seedsigner/views/psbt_views.py
 msgid "PSBT's {} address could not be generated from your seed."
 msgstr "Dirección de PSBT para su {} no se puede generar desde esta semilla."
+
+#: src/seedsigner/views/psbt_views.py
+msgid "Suspicious PSBT"
+msgstr "PSBT Sospechoso"
 
 #: src/seedsigner/views/psbt_views.py
 msgid "Address Verification Failed"
@@ -972,7 +965,7 @@ msgstr "Esta semilla no produjo una firma válida."
 
 #: src/seedsigner/views/scan_views.py
 msgid "Scan a QR code"
-msgstr "Escanear código QR"
+msgstr "escanear QR"
 
 #: src/seedsigner/views/scan_views.py
 msgid "QRCode not recognized or not yet supported."
@@ -981,24 +974,6 @@ msgstr "Código QR no reconocido o aún no soportado"
 #: src/seedsigner/views/scan_views.py
 msgid "Wrong QR Type"
 msgstr "Tipo de QR Equivocado"
-
-#: src/seedsigner/views/scan_views.py src/seedsigner/views/view.py
-msgid "Error"
-msgstr "Error"
-
-#: src/seedsigner/views/scan_views.py
-msgid "Unknown QR Type"
-msgstr "Tipo QR Desconocido"
-
-#: src/seedsigner/views/scan_views.py
-msgid "QRCode is invalid or is a data format not yet supported."
-msgstr ""
-"El código QR no es válido o es un formato de datos que aún no es compatible."
-
-#: src/seedsigner/views/scan_views.py src/seedsigner/views/seed_views.py
-#: src/seedsigner/views/view.py
-msgid "Done"
-msgstr "Finalizar"
 
 #: src/seedsigner/views/scan_views.py src/seedsigner/views/seed_views.py
 msgid "Scan PSBT"
@@ -1026,11 +1001,25 @@ msgstr "Se esperaba un descriptor de billetera QR"
 
 #: src/seedsigner/views/scan_views.py
 msgid "Scan address QR"
-msgstr "Escanear dirección QR"
+msgstr "escanear dirección"
 
 #: src/seedsigner/views/scan_views.py
 msgid "Expected an address QR"
 msgstr "Se esperaba una dirección QR"
+
+#: src/seedsigner/views/scan_views.py
+msgid "Unknown QR Type"
+msgstr "Tipo QR Desconocido"
+
+#: src/seedsigner/views/scan_views.py
+msgid "QRCode is invalid or is a data format not yet supported."
+msgstr ""
+"El código QR no es válido o es un formato de datos que aún no es compatible."
+
+#: src/seedsigner/views/scan_views.py src/seedsigner/views/seed_views.py
+#: src/seedsigner/views/view.py
+msgid "Done"
+msgstr "Finalizar"
 
 #. This is on the opening splash screen, displayed above the HRF logo
 #: src/seedsigner/views/screensaver.py
@@ -1076,7 +1065,7 @@ msgstr "Cargar una Semilla"
 #. Inserts the word number (e.g. "Seed Word #6")
 #: src/seedsigner/views/seed_views.py
 msgid "Seed Word #{}"
-msgstr "Palabra Número {}"
+msgstr "Palabra Nº. {}"
 
 #: src/seedsigner/views/seed_views.py
 msgid "Review & Edit"
@@ -1503,10 +1492,13 @@ msgstr "Aún no se ha implementado"
 msgid "Back to Main Menu"
 msgstr "Volver al Menú"
 
+#. The network setting (mainnet/testnet/regtest) doesn't match the provided
+#. derivation path
 #: src/seedsigner/views/view.py
 msgid "Network Mismatch"
 msgstr "Discrepancia de Red"
 
+#. Button option to alter a setting
 #: src/seedsigner/views/view.py
 msgid "Change Setting"
 msgstr "Cambiar Configuración"
